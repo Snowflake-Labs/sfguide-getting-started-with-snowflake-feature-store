@@ -86,10 +86,10 @@ def create_FeatureStore(session, database, fs_schema, warehouse):
     """
 
     try:
-        fs = FeatureStore(session, database, fs_schema, warehouse, CreationMode.FAIL_IF_NOT_EXIST)
+        fs = FeatureStore(session, database, fs_schema, warehouse, creation_mode=CreationMode.FAIL_IF_NOT_EXIST)
         print(f"Feature Store ({fs_schema}) already exists") 
     except:
         print(f"Feature Store ({fs_schema}) created")   
-        fs = FeatureStore(session, database, fs_schema, warehouse, CreationMode.CREATE_IF_NOT_EXIST)
+        fs = FeatureStore(session, database, fs_schema, warehouse, creation_mode=CreationMode.CREATE_IF_NOT_EXIST)
 
     return fs
