@@ -1,9 +1,5 @@
 {
     "account"   : "<your account identifier here>",
     "user"      : "<your user here>",
-    "password"  : "<your_password_here>",
-    "role"      : "FS_QS_ROLE",
-    "warehouse" : "TPCXAI_SF0001_WH",
-    "database"  : "TPCXAI_SF0001_QUICKSTART_INC",
-    "schema"    : "CONFIG"
+    "password"  : "<your_password_here>"
 }
